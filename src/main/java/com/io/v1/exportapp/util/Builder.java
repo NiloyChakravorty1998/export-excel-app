@@ -2,7 +2,9 @@ package com.io.v1.exportapp.util;
 
 import com.io.v1.exportapp.dto.CryptoDataDTO;
 import com.io.v1.exportapp.model.CryptoEntity;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Builder {
 
     public CryptoDataDTO convertToDto(CryptoEntity entity){

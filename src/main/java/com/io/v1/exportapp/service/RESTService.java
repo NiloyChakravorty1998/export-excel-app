@@ -28,6 +28,7 @@ public class RESTService {
                     .bodyToMono(ApiResponse.class)
                     .block();
         } catch (Exception e){
+            log.error("Error at RESTService : " );
             e.printStackTrace();
         }
 
